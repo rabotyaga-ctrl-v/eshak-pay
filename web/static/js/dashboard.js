@@ -44,6 +44,24 @@ async function loadAccount() {
 
         const data = await response.json();
 
+        const accountId = document.getElementById("account-id");
+        const copyAccountIdButton = document.getElementById("copy-account-id");
+
+        accountId.textContent = data.id;
+
+        copyAccountIdButton.addEventListener("click", async () => {
+            try {
+                await navigator.clipboard.writeText(data.id);
+                copyAccountIdButton.textContent = "Скопировано ✓";
+
+                setTimeout(() => {
+                    copyAccountIdButton.textContent = "Копировать";
+                }, 1500);
+            } catch (error) {
+                console.error("Failed to copy account ID:", error);
+            }
+        });
+
         const balance = data.balance_kopecks / 100;
 
         accountBalance.textContent = `${balance.toLocaleString("ru-RU")} ₽`;
