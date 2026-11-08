@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>О проекте — Eshak Pay</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="/static/img/eshak-logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div id="app">
+
+    <header class="header">
+        <a class="logo" href="/">
+            <img src="/static/img/eshak-logo.png" alt="Eshak Pay">
+            <span>eshak pay</span>
+        </a>
+
+        <div class="header-actions">
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                aria-label="Переключить тему"
+            >
+                ◐
+            </button>
+        </div>
+    </header>
+
+    <main class="dashboard">
+
+        <a href="/" class="back-link">
+            ← На главную
+        </a>
+
+        <section class="dashboard-welcome">
+
+            <span class="eyebrow">ABOUT</span>
+
+            <h1>
+                Виртуальный<br>
+                <span>кошелёк.</span>
+            </h1>
+
+            <p>
+                Eshak pay — учебный open source проект,
+                созданный для изучения backend-разработки
+                на Go и PostgreSQL.
+            </p>
+
+        </section>
+
+        <section class="about-section">
+
+            <h2>Что такое Eshak pay?</h2>
+
+            <p>
+                Eshak pay имитирует работу электронного кошелька.
+                Пользователь может зарегистрироваться, войти в систему,
+                посмотреть баланс, переводить виртуальные средства
+                и просматривать историю операций.
+            </p>
+
+            <p>
+                Проект не работает с реальными деньгами и предназначен
+                исключительно для обучения и демонстрации архитектуры.
+            </p>
+
+        </section>
+
+        <section class="about-section">
+
+            <h2>Частые вопросы</h2>
+
+            <div class="faq">
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        Что такое Eshak pay?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Eshak pay — учебная симуляция
+                            электронного кошелька. Проект показывает,
+                            как можно построить backend-приложение
+                            на Go с PostgreSQL.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        Это настоящий банк?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Нет. Eshak pay не является банком
+                            или платёжной системой. Все средства
+                            внутри проекта виртуальные.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        Что такое Idempotency-Key?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Это уникальный ключ запроса, который
+                            защищает перевод от повторного выполнения
+                            при повторной отправке одного и того же запроса.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        Почему используется Go?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Go хорошо подходит для backend-разработки:
+                            он простой, быстрый, имеет удобную стандартную
+                            библиотеку и хорошо работает с конкурентными
+                            задачами.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        Почему нет ORM?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Проект специально использует raw SQL,
+                            чтобы лучше понимать PostgreSQL, запросы,
+                            транзакции и взаимодействие Repository
+                            с базой данных.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        Можно посмотреть исходный код?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Да. Eshak pay развивается как open source
+                            проект. Исходный код будет доступен
+                            в публичном GitHub-репозитории.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about-section">
+
+            <h2>Технологии</h2>
+
+            <p>
+                Go · PostgreSQL · pgx · net/http · JavaScript · HTML · CSS
+            </p>
+
+        </section>
+
+        <section class="about-section">
+
+            <h2>Open Source</h2>
+
+            <p>
+                Проект развивается открыто и предназначен
+                для обучения, экспериментов и изучения
+                архитектуры backend-приложений.
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="/static/js/app.js"></script>
+<script src="/static/js/about.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eshak pay — управление личными финансами без лишнего.">
+
+    <title>SmartWallet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/static/img/eshak-logo.png">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div id="app">
+        <header class="header">
+            <a class="logo" href="/">
+                <img src="/static/img/eshak-logo.png" alt="Eshak Pay">
+                <span>eshak pay</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="/about" class="about-page-link">
+                    О проекте
+                 </a>
+                <div id="guest-actions">
+                    <a href="/login" class="header-link">Войти</a>
+                </div>
+
+                <div id="user-actions" class="user-actions">
+                    <span id="header-user-email"></span>
+
+                    <a href="/dashboard" class="header-link">
+                        Личный кабинет
+                    </a>
+
+                    <button
+                        class="logout-button"
+                        id="logout-button"
+                        type="button"
+                    >
+                        Выйти
+                    </button>
+                </div>
+
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    aria-label="Переключить тему"
+                >
+                    ◐
+                </button>
+            </div>
+        </header>
+
+        <main class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">YOUR MONEY. YOUR PRIVATE ESHAK.</span>
+
+                <h1>
+                    Финансы.<br>
+                    <span>Без лишнего.</span>
+                </h1>
+
+                <p>
+                    Управляй своими деньгами просто.
+                    Счета, карты и переводы — всё необходимое
+                    в одном пространстве.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="/login" class="button button-primary">Войти</a>
+                    <a href="/register" class="button button-secondary">
+                        Создать аккаунт
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span>ESHAK PAY © 2026</span>
+            <span>BUILT FOR SIMPLICITY</span>
+        </footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+
+*.exe
+*.log
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+cookies.txt
+sender-cookies.txt
